@@ -1,0 +1,20 @@
+<template>
+    <lightning-card title="Case Escalation Countdown">
+        <lightning-layout multiple-rows="true" horizontal-align="center">
+            <lightning-layout-item size="12" padding="around-small">
+                <div class="slds-align_absolute-center" style="background-color:rgb(194, 194, 241);border-radius: 20px; font-size:20px;">
+                    {countDownHours} Hours : {countDownMins} Minutes : {countDownSecs} Seconds
+              </div>
+            </lightning-layout-item>
+            <lightning-layout-item size="small" padding="around-small">
+                <template if:true={escTextVisible}>
+                    <div class="slds-m-around_medium" style="font-size: 18px;color:red"> Case got escalated!! </div>
+                  </template>
+            </lightning-layout-item>
+        </lightning-layout>
+      
+      
+    
+    </lightning-card>
+    
+</template>

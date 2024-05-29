@@ -1,0 +1,18 @@
+<template>
+    <template lwc:if={OtherTestimonials.data}>
+        <template for:each={OtherTestimonials.data} for:item="other">
+            <div key={other.id} class="slds-var-m-around_large">
+                
+                  <p>
+                    <span style="font-size: 16px;color:rgb(0, 166, 255)"> {other.Testimonial_By__c} </span>
+                    - {other.Company_organization__c}
+                  </p>
+                  <p> {other.Testimonial_Date__c}</p>
+                  <p></p>
+                  <p style="font-size: 16px;color:rgba(0, 0, 0, 0.737)"><strong>{other.Subject__c}</strong></p>
+                  <p>{other.Comment__c}</p>
+                  <p></p>
+            </div>
+        </template>
+    </template> 
+</template>
